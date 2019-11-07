@@ -169,16 +169,21 @@ img {
   margin: 0 auto;
 }
 header {
+  border-bottom: 2px dashed #C0C0C0;
+  margin-bottom: 0;
+}
+header .navParent {
   display: flex;
   justify-content: space-between;
   padding: 4% 0;
+  max-width: 800px;
 }
-header nav {
+header .navParent nav {
   display: flex;
   justify-content: space-between;
   width: 45%;
 }
-header nav a {
+header .navParent nav a {
   text-decoration: none;
   font-size: 2rem;
   color: black;
@@ -194,12 +199,15 @@ header nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .lets {
+  border-top: 2px dashed #C0C0C0;
+  padding-top: 3%;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border-top: 2px dashed #C0C0C0;
 }
 .home .content-section .text-content {
   width: 48%;
@@ -219,6 +227,7 @@ header nav a {
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+  padding-top: 2%;
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -243,7 +252,7 @@ header nav a {
 }
 .home .content-pick .destination .btn {
   background: #17A2B8;
-  border-radius: 18%;
+  border-radius: 10px;
   width: 85%;
   height: 4rem;
   font-size: 2rem;
