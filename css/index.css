@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+}
 header {
   border-bottom: 2px dashed #C0C0C0;
   margin-bottom: 0;
@@ -178,10 +183,22 @@ header .navParent {
   padding: 4% 0;
   max-width: 800px;
 }
+@media (max-width: 500px) {
+  header .navParent {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+}
 header .navParent nav {
   display: flex;
   justify-content: space-between;
   width: 45%;
+}
+@media (max-width: 500px) {
+  header .navParent nav {
+    width: 90%;
+  }
 }
 header .navParent nav a {
   text-decoration: none;

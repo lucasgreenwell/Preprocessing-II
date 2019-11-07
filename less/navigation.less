@@ -2,15 +2,26 @@
 header{
     border-bottom: 2px dashed @navigation-border;
     margin-bottom: 0;
+  
     .navParent{
         display: flex;
         justify-content: space-between;
         padding: 4% 0;
         max-width: 800px;
+
+        @media @mobile{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+
         nav{
             display: flex;
             justify-content: space-between;
             width: 45%;
+            @media @mobile{
+                width: 90%;
+            }
             a{
                 text-decoration: none;
                 font-size: 2rem;
