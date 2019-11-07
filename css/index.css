@@ -321,3 +321,24 @@ header .navParent nav a {
   justify-content: center;
   align-items: center;
 }
+.home form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.home form .special {
+  width: 80%;
+}
+.home form .sub {
+  background: #17A2B8;
+  border-radius: 10px;
+  width: 30%;
+  height: 3rem;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  color: #17A2B8;
+}
