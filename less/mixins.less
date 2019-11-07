@@ -1,1 +1,26 @@
 // Mixins in here
+
+.flex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+.button(@width, @height){
+    background: @eastern-blue;
+    border-radius: 10px;
+    width: @width;
+    height: @height;
+    font-size: 2rem;
+    color: white;
+    .flex(center, center);
+}
+.animation(@name, @duration, @reps){
+    animation-name: @name;
+    animation-duration: @duration;
+    animation-iteration-count: @reps;
+}
+
+@keyframes color-swap{
+    from{color: black;}
+    to{color: green;}
+}
