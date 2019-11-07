@@ -14,3 +14,13 @@
     color: white;
     .flex(center, center);
 }
+.animation(@name, @duration, @reps){
+    animation-name: @name;
+    animation-duration: @duration;
+    animation-iteration-count: @reps;
+}
+
+@keyframes color-swap{
+    from{color: black;}
+    to{color: green;}
+}

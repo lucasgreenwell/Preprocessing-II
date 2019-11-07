@@ -1,3 +1,11 @@
+@keyframes color-swap {
+  from {
+    color: black;
+  }
+  to {
+    color: green;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -158,6 +166,9 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  animation-name: color-swap;
+  animation-duration: 4s;
+  animation-iteration-count: 5;
 }
 img {
   max-width: 100%;
